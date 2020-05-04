@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "lib-style-guide": {
+      "projectType": "library",
+      "root": "projects/lib-style-guide",
+      "sourceRoot": "projects/lib-style-guide/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/lib-style-guide/tsconfig.lib.json",
+            "project": "projects/lib-style-guide/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/lib-style-guide/src/test.ts",
+            "tsConfig": "projects/lib-style-guide/tsconfig.spec.json",
+            "karmaConfig": "projects/lib-style-guide/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/lib-style-guide/tsconfig.lib.json",
+              "projects/lib-style-guide/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "lib-style-guide"
+}
