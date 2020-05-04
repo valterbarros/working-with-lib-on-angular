@@ -14,9 +14,10 @@ cd my-workspace
 ng build --watch
 ```
 
-for app open a new terminal tab and run
+for app open a new terminal tab and run:
 
 ```
 cd testing-style-guide-lib
+
 ng serve
 ```
