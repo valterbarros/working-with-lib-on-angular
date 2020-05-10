@@ -19,12 +19,12 @@
       "dom"
     ],
     "paths": {
-      "lib-style-guide": [
-        "../my-workspace/dist/lib-style-guide"
-      ],
-      "@angular/*": [
-        "./node_modules/@angular/*"
-      ]
+      // "lib-style-guide": [
+      //   "../my-workspace/dist/lib-style-guide"
+      // ],
+      // "@angular/*": [
+      //   "./node_modules/@angular/*"
+      // ]
     }
   },
   "angularCompilerOptions": {
