@@ -4,20 +4,21 @@
 node 10+
 ```
 
-### To build lib and application
+### To build lib and application #1 method
 
-for lib open a new terminal tab and run:
+open a new terminal tab and run:
 
 ```
 cd my-workspace
+npm install
+ng build
+cd dist
+cd lib-style-guide
+npm i
+npm link
 
-ng build --watch
-```
-
-for app open a new terminal tab and run:
-
-```
-cd testing-style-guide-lib
-
+cd ../../testing-style-guide-lib
+npm i
+npm link lib-style-guide
 ng serve
 ```
